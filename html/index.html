@@ -5,26 +5,8 @@
     <meta charset="utf-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script type="text/javascript" src="/eel.js"></script>
-    <script type="text/javascript">
-      eel.expose(output_logs)
-        function output_logs(values) {
-          document.getElementById("log-output").value += values;
-          document.getElementById("log-output").scrollTop = document.getElementById("log-output").scrollHeight;
-      }
-      async function search_character() {
-        csv_name = document.getElementById("csv_name").value.trim();
-        search_word = document.getElementById("search_word").value.trim();
-        if (!csv_name) {
-          alert("csvファイル名を入力してください。");
-        } else if (!search_word) {
-          alert("検索ワードを入力してください。");
-        } else {
-          await eel.search_character(csv_name, search_word);
-        }
-      }
-    </script>
+    <script type="text/javascript" src="./js/main.js"></script>
   </head>
-
   <body>
     <header>
       <h1>キャラクター検索</h1>
