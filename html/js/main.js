@@ -1,6 +1,6 @@
 eel.expose(output_logs)
 function output_logs(values) {
-  document.getElementById("log-output").value += values;
+  document.getElementById("log-output").value += values + "\n";
   document.getElementById("log-output").scrollTop = document.getElementById("log-output").scrollHeight;
 }
 async function search_character() {
