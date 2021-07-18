@@ -2,8 +2,8 @@ import os
 
 import eel
 
-READ_CSV_PATH = os.path.join(os.getcwd(), "csv\\character.csv")
-WRITE_CSV_PATH = os.path.join(os.getcwd(), "csv\\{csv_name}.csv")
+READ_CSV_PATH = os.path.join(os.getcwd(), "csv/character.csv")
+WRITE_CSV_PATH = os.path.join(os.getcwd(), "csv/{csv_name}.csv")
 
 
 def search(csv_name: str, search_word: str):
